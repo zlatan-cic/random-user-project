@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  background: #75a6cc;
+}
+
+/* Users container */
+
+.container {
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ecf0f3;
+
+  /* Shadow */
+  -webkit-box-shadow: 0px 10px 14px -3px rgba(84, 84, 84, 0.82);
+  -moz-box-shadow: 0px 10px 14px -3px rgba(84, 84, 84, 0.82);
+  box-shadow: 0px 10px 14px -3px rgba(84, 84, 84, 0.82);
+
+  width: 30rem;
+
+
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.users-container {
+  /* background-color: blue; */
+  padding: .5rem;
+}
+
+/* Users image for phone*/
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.users-name {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+/* Users - info */
+
+.users__info {
+  /* background-color: aquamarine; */
+  padding: .5rem;
+}
+
+.users__info > p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 768px){
+  /* body {
+    background-color: aquamarine;
+  } */
+
+  .container {
+    flex-direction: row;
+    width: 50rem;
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .users__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 1rem;
+  }
+}
