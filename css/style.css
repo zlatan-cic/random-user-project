@@ -20,7 +20,7 @@ body {
 /* Users container */
 
 .container {
-  padding: 1.5rem;
+  padding: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,10 +48,17 @@ body {
 }
 
 /* Users image for phone*/
+.inner-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .users-name {
@@ -66,10 +73,11 @@ img {
 .users__info {
   /* background-color: aquamarine; */
   padding: .5rem;
+  margin-top: 1.5rem;
 }
 
 .users__info > p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -95,9 +103,9 @@ img {
 
   .container {
     flex-direction: row;
-    width: 50rem;
+    width: 70rem;
     max-width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .users__info {
